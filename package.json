@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.1",
+  "version": "0.7.3",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -13,16 +13,23 @@
   },
   "dependencies": {
     "electron-log": "^1.3.0",
-    "electron-updater": "^3.1.2"
+    "electron-updater": "4.0.0"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.dvm4078.ElectronAutoUpdate",
     "mac": {
       "category": "your.app.category.type",
       "target": [
         "zip",
         "dmg"
       ]
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "dvm4078",
+        "repo": "ElectronAutoUpdate"
+      }
+    ]
   }
 }
